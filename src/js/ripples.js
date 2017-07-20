@@ -1,3 +1,7 @@
+/*
+Adapted from Alex Zaworski's "Colors Changin'". Creates a bursting ripple effect on mousedown.
+*/
+
 var c = document.getElementById('img1');
 var ctx = c.getContext('2d');
 
