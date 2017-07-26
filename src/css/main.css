@@ -1,40 +1,63 @@
+/* The below is for stylized header */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font: normal 18px 'Open Sans', sans-serif;
+    background: #fafafa;
+    color: #333;
+}
+
 main {
-  right:600px;
-  top:600px;
-  position: absolute;
-  background-color: purple;
+    min-height: 100vh;
 }
 
-body{
-  margin: auto;
-     background-color: #000 !important;
-     font-size: 14px;
+header {
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+    h1{
+        font: normal 4em 'Playfair Display SC', serif;
+        text-align:center;
+    }
 
-h1	{
-color: #FFF;
-font-family: arial, sans-serif;
-font-size: 36px;
-font-weight: bold;
-margin-top: 3px;
-margin-bottom:3px;
-}
+    nav {
+        max-width: 800px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-h5	{
-color: #000 !important;
-font-family: arial, sans-serif  !important;
-font-size: 18px !important;
-margin-top: 1px !important;
-margin-bottom:1px !important;
-margin-left:30px !important;
+        nav a {
+            flex-grow: 1;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+        }
 
-}
+        // animmation
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right:0;
+            height: 2px;
+            transform: scaleX(0);
+            background: #333;
+            transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+        }
 
-
-#img1, #img2, #img3{
-  visibility: : hidden;
-  border-style: solid;
-  border-width: 4px;
-  border-color: black;
-  width:338px !important;
-}
+        nav a:hover::after{
+            transform: scaleX(1)
+        }
+/* End stylized information here. */
