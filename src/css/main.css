@@ -61,3 +61,24 @@ header {
             transform: scaleX(1)
         }
 /* End stylized information here. */
+
+/* Fireworks styling */
+#lake {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  cursor: pointer;
+}
+
+/* End fireworks styling. */
+
+/* Typewriter styling */
+#infor {
+  width: 500px;
+  height: 250px;
+  background-color:#ce3635;
+  text-align: center;
+  color:#fff;
+  padding-top:10em;
+}
+/* End typewriter styling*/
