@@ -1,57 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset=utf-8>
+  <meta charset=utf-8>
 
-    <title>i_am=Vijayraj_Mahida</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>i_am=Vijayraj_Mahida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS Libraries -->
-    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <!-- CSS Libraries -->
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 
-    <!-- CSS Source -->
-    <link rel="stylesheet" href="./src/css/main.css" />
+  <!-- CSS Source -->
+  <link rel="stylesheet" href="./src/css/main.css" />
 
-    <!-- JS Libraries -->
-    <script src="lib/js/bootstrap.min.js"></script>
-    <script src="lib/js/anime.js"></script>
+  <!-- JS Libraries -->
+  <script src="lib/js/bootstrap.min.js"></script>
+  <script src="lib/js/anime.js"></script>
 
-    <!-- JS Source -->
-    <script src="src/js/typewriter.js"></script>
+  <!-- JS Source -->
+  <script src="src/js/typewriter.js"></script>
 
 
 </head>
+
+<!-- Obtained from: https://codepen.io/blaketarter/pen/Eadbj -->
+<header>
+    <div class="navbar">
+      <ul class="nav">
+        <li class="item">
+          <a href="#">Home</a>
+        </li>
+
+        <li class="item">
+          <a href="#">Projects</a>
+        </li>
+
+        <li class="item">
+          <a href="#">Resume </a>
+        </li>
+
+        <li class="item">
+          <a href="#">ETC. </a>
+        </li>
+
+        <li class="item">
+          <a href="#" class="contact">About</a>
+        </li>
+      </ul>
+
+      <div class="logo">
+        <img src="#">
+      </div>
+    </div>
+  </header>
+
 <body>
   <div class="container-fluid">
-    <header>
-        <h1>Test Page</h1>
-        <nav>
-            <a href="#">First Tab</a>
-            <a href="#">Second tab</a>
-            <a href="#">Third tab</a>
-            <a href="#">Fourth tab</a>
-        </nav>
-    </header>
 
-    <div class="uHomepage">
-      <h2> Vijayraj Mahida </h2>
-        <div class="row">
-          <div class="col col-md-5">
-            <!-- The alt="" provides an alternative message in case img does not appear -->
-            <img src="src/img/Jupiter.jpg" alt="Sphinx img not loaded!!!" style="width:500px;height:250px;">
-          </div>
-          <div class="col col-md-5">
-            <div id="infor">
-            <a href="" class="typewrite" data-period="2000" data-type='[ "I don’t want to earn my living; I want to live.", "The trouble is you think you have time.", "So it goes.", "Whatever you are, be a good one." ]'>
-              <span class="wrap"></span>
-            </a>
-          </div>
-        </div>
-        </div>
-        <!-- Create another <div class="row"></div> tag to make a new row and populate it w/ desired columns -->
-    </div>
+
   </div>
 
+
+  <script>
+    $(document).ready(function() {
+      $(window).on('scroll', function() {
+        if (Math.round($(window).scrollTop()) > 100) {
+          $('.navbar').addClass('scrolled');
+        } else {
+          $('.navbar').removeClass('scrolled');
+        }
+      });
+    });
+  </script>
+
 </body>
+
 </html>
